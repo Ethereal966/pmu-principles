@@ -1,0 +1,26 @@
+{
+  "name": "principles-project",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/Ethereal966/pmu-principles-project#readme",
+  "bugs": {
+    "url": "https://github.com/Ethereal966/pmu-principles-project/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ethereal966/pmu-principles-project.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "./src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ."
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "express": "^5.2.1",
+    "sqlite3": "^6.0.1"
+  }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account - PMU Bank of Clothes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+    <div class="container d-flex justify-content-center align-items-center min-vh-100 py-5">
+        <div class="card shadow-sm" style="width: 100%; max-width: 450px;">
+            <div class="card-body p-4 p-md-5">
+                <div class="text-center mb-4">
+                    <h2 class="fw-bold text-primary">Join the Bank</h2>
+                    <p class="text-muted">Create an account to donate or request clothes</p>
+                </div>
+                
+                <form action="/register" method="POST">
+                    <div class="mb-3">
+                        <label for="fullName" class="form-label fw-semibold">Full Name</label>
+                        <input type="text" class="form-control" id="fullName" name="fullName" placeholder="e.g., John Smith" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="pmuEmail" class="form-label fw-semibold">PMU Email Address</label>
+                        <input type="email" class="form-control" id="pmuEmail" name="pmuEmail" placeholder="student@pmu.edu.sa" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="role" class="form-label fw-semibold">I am a...</label>
+                        <select class="form-select" id="role" name="role" required>
+                            <option value="student">Student (Request & Donate)</option>
+                            <option value="donor">External Donor (Donate Only)</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="password" class="form-label fw-semibold">Password</label>
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Create a strong password" required>
+                    </div>
+
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary btn-lg">Create Account</button>
+                    </div>
+                </form>
+                
+                <div class="text-center mt-4">
+                    <span class="text-muted">Already have an account?</span> 
+                    <a href="/login.html" class="text-decoration-none fw-semibold">Log In</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
